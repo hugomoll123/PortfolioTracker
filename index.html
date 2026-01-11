@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Portfolio Tracker</h1>
+            <div class="last-updated">
+                <span id="lastUpdated">Loading...</span>
+            </div>
+        </header>
+
+        <!-- Loading Indicator -->
+        <div id="loadingOverlay" class="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Fetching live stock prices...</p>
+        </div>
+
+        <!-- Summary Cards -->
+        <section class="summary-section">
+            <div class="summary-card">
+                <span class="summary-label">Total Portfolio Value</span>
+                <span class="summary-value" id="totalValue">-</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Total Invested</span>
+                <span class="summary-value" id="totalInvested">-</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Total P/L</span>
+                <span class="summary-value" id="totalPL">-</span>
+                <span class="summary-percent" id="totalPLPercent">-</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Unrealized P/L</span>
+                <span class="summary-value" id="unrealizedPL">-</span>
+            </div>
+            <div class="summary-card">
+                <span class="summary-label">Realized P/L</span>
+                <span class="summary-value" id="realizedPL">-</span>
+            </div>
+        </section>
+
+        <!-- Open Positions -->
+        <section class="positions-section">
+            <h2>Open Positions</h2>
+            <div class="table-wrapper">
+                <table class="positions-table" id="openPositionsTable">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Ticker</th>
+                            <th class="text-left">Name</th>
+                            <th class="text-right">Quantity</th>
+                            <th class="text-right">Avg. Buy (EUR)</th>
+                            <th class="text-right">Current (EUR)</th>
+                            <th class="text-right">Value (EUR)</th>
+                            <th class="text-right">P/L (EUR)</th>
+                            <th class="text-right">P/L (%)</th>
+                            <th class="text-right">% Portfolio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="openPositionsBody">
+                        <tr>
+                            <td colspan="9" class="loading-cell">Loading positions...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Closed Positions -->
+        <section class="positions-section">
+            <h2>Closed Positions</h2>
+            <div class="table-wrapper">
+                <table class="positions-table" id="closedPositionsTable">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Ticker</th>
+                            <th class="text-left">Name</th>
+                            <th class="text-right">Qty Traded</th>
+                            <th class="text-right">Avg. Buy (EUR)</th>
+                            <th class="text-right">Avg. Sell (EUR)</th>
+                            <th class="text-right">Total Costs</th>
+                            <th class="text-right">Realized P/L (EUR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="closedPositionsBody">
+                        <tr>
+                            <td colspan="7" class="empty-cell">No closed positions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Data from Yahoo Finance. Prices may be delayed.</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
