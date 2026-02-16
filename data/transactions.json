@@ -1,6 +1,26 @@
 {
   "transactions": [
     {
+      "orderId": "b1651a31-93a8-4137-843b-a0e4d581ff75",
+      "date": "2026-02-16T14:03:50",
+      "name": "Roko AB (publ) Class B",
+      "isin": "SE0023950795",
+      "yahooTicker": "ROKO-B.ST",
+      "type": "buy",
+      "exchange": "OMX",
+      "venue": "JNSI",
+      "quantity": 1,
+      "pricePerShare": 1508.1,
+      "localCurrency": "SEK",
+      "localValue": 1508.1,
+      "eurValue": 142.07,
+      "exchangeRate": 10.615238,
+      "autoFxCosts": 0.36,
+      "transactionCosts": 4.9,
+      "totalCosts": 5.26,
+      "totalEur": 147.32
+    },
+    {
       "orderId": "c6ef7865-9c83-46d9-b627-9392b312dae5",
       "date": "2026-02-16T13:56:57",
       "name": "",
