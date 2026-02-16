@@ -1,6 +1,26 @@
 {
   "transactions": [
     {
+      "orderId": "c6ef7865-9c83-46d9-b627-9392b312dae5",
+      "date": "2026-02-16T13:56:57",
+      "name": "",
+      "isin": "SE0023950795",
+      "yahooTicker": "ROKO-B.ST",
+      "type": "buy",
+      "exchange": "OMX",
+      "venue": "MESI",
+      "quantity": 1,
+      "pricePerShare": 1509,
+      "localCurrency": "SEK",
+      "localValue": 1509,
+      "eurValue": 142.15,
+      "exchangeRate": 10.615644,
+      "autoFxCosts": 0.36,
+      "transactionCosts": 4.9,
+      "totalCosts": 5.26,
+      "totalEur": 147.4
+    },
+    {
       "orderId": "ad8a8eaf-4228-4461-af85-1e91e530199f",
       "date": "2026-01-12T20:26:50",
       "name": "BlackBerry Ltd",
